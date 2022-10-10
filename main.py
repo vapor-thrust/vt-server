@@ -4,5 +4,5 @@ app = FastAPI()
 
 
 @app.get('/items/{item}')
-def read_item(item: int, q:str):
+def read_item(item: int, q: str):
     return {'item': item, 'query': q}
